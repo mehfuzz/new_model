@@ -161,7 +161,7 @@ flags.DEFINE_float(
 
 # Settings for fine-tuning the network.
 
-flags.DEFINE_string('tf_initial_checkpoint', azure://sampledatavalohai/sampledata/data/01F24/01F24MJPMMBXYZ6MRA4N63K0JY/upload/model.ckpt-10000.index,
+flags.DEFINE_string('tf_initial_checkpoint', 'azure://sampledatavalohai/sampledata/data/01F24/01F24MJPMMBXYZ6MRA4N63K0JY/upload/model.ckpt-10000.index',
                     'The initial checkpoint in tensorflow format.')
 
 # Set to False if one does not want to re-use the trained classifier weights.
