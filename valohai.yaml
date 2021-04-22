@@ -70,6 +70,10 @@
         type: string
         default: "train"
         description: "Which split of the dataset to be used for training"
+      - name: init_checkpoint
+        type: string
+        default: "azure://sampledatavalohai/sampledata/data/01F24/01F24MJPMMBXYZ6MRA4N63K0JY/upload/model.ckpt-10000.index"
+        description: "Init ckpt"
       - name: model_variant
         type: string
         default: "xception_65"
