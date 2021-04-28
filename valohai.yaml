@@ -58,7 +58,7 @@
       - name: tfrecords
         default: azure://sampledatavalohai/sampledata/data/01EY5/01EY5YHQYRT70D8Q390Q4A0K2B/output-29/tfrecords.zip
       - name: initial_checkpoint
-        default: azure://sampledatavalohai/sampledata/data/01F24/01F24MJPMMBXYZ6MRA4N63K0JY/upload/model.ckpt
+        default: azure://sampledatavalohai/sampledata/deeplabv3_xception_ade20k_train/*
     parameters:
       - name: logtostderr
         type: flag
