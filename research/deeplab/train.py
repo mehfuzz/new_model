@@ -43,7 +43,7 @@ slim = tf.contrib.slim
 flags = tf.app.flags
 FLAGS = flags.FLAGS
 
-INPUTS_DIR = os.getenv('VH_INPUTS_DIR', None)
+INPUTS_DIR = os.getenv('VH_INPUTS_DIR')
 OUTPUTS_DIR = os.getenv('VH_OUTPUTS_DIR', ".valohai/repository/trainlog")
 
 # Settings for multi-GPUs/multi-replicas training.
@@ -161,7 +161,7 @@ flags.DEFINE_float(
 
 # Settings for fine-tuning the network.
 
-flags.DEFINE_string('tf_initial_checkpoint', os.path.join(INPUTS_DIR, 'model.ckpt-10000.data-00000-of-00001') ,
+flags.DEFINE_string('tf_initial_checkpoint', os.path.join(INPUTS_DIR, 'deeplabv3_xception_ade20k_train/model.ckpt') ,
                     'The initial checkpoint in tensorflow format.')
 
 # Set to False if one does not want to re-use the trained classifier weights.
