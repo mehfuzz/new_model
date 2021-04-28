@@ -57,6 +57,8 @@
     inputs:
       - name: tfrecords
         default: azure://sampledatavalohai/sampledata/data/01EY5/01EY5YHQYRT70D8Q390Q4A0K2B/output-29/tfrecords.zip
+      - name: initial_checkpoint
+        default: azure://sampledatavalohai/sampledata/data/01F24/01F24MJPMMBXYZ6MRA4N63K0JY/upload/model.ckpt-10000.data-00000-of-00001
     parameters:
       - name: logtostderr
         type: flag
@@ -70,10 +72,6 @@
         type: string
         default: "train"
         description: "Which split of the dataset to be used for training"
-      - name: init_checkpoint
-        type: string
-        default: "azure://sampledatavalohai/sampledata/data/01F24/01F24MJPMMBXYZ6MRA4N63K0JY/upload/model.ckpt-10000.index"
-        description: "Init ckpt"
       - name: model_variant
         type: string
         default: "xception_65"
